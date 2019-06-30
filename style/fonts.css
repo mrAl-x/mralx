@@ -1,0 +1,43 @@
+/* ------ Proxima Nova Alt ------ */
+
+@font-face {
+	font-family: 'Proxima Nova Alt';
+	src: url('../assets/fonts/proxima_nova_alt_regular-webfont.woff2') format('woff2'),
+				url('../assets/fonts/proxima_nova_alt_regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Alt';
+	src: url('../assets/fonts/proxima_nova_alt_bold-webfont.woff2') format('woff2'),
+				url('../assets/fonts/proxima_nova_alt_bold-webfont.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Alt';
+	src: url('../assets/fonts/proxima_nova_alt_regular_italic-webfont.woff2') format('woff2'),
+				url('../assets/fonts/proxima_nova_alt_regular_italic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Alt';
+	src: url('../assets/fonts/proxima_nova_alt_light_italic-webfont.woff2') format('woff2'),
+				url('../assets/fonts/proxima_nova_alt_light_italic-webfont.woff') format('woff');
+	font-weight: lighter;
+	font-style: italic;
+}
+
+/* ------ Adventures Unlimited ------ */
+
+@font-face {
+	font-family: 'Adventures Unlimited';
+	src: url('../assets/fonts/adventures_unlimited_script_regular-webfont.woff2') format('woff2'),
+				url('../assets/fonts/adventures_unlimited_script_regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

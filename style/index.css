@@ -1,0 +1,212 @@
+@import './base';
+@import './variables';
+@import './fonts';
+
+:root {
+	--portrait-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
+
+	/* Needed for color-mod() function */
+	--pink: #e6117a;
+	--white: #ffffff;
+}
+
+.header {
+	max-width: 100%;
+	margin-top: 20px;
+	padding-right: 90px;
+	display: flex;
+	justify-content: flex-start;
+
+	&__imageContainer {
+		position: relative;
+		left: -6vw;
+		max-width: 380px;
+		height: 420px;
+		padding: 15px;
+		flex: 1;
+		overflow: hidden;
+		border-radius: 3px;
+		box-shadow: var(--portrait-shadow);
+	}
+
+	&__image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__textContainer {
+		flex: 1;
+		margin: auto 0;
+		line-height: 1.4;
+	}
+
+	&__title {
+		margin-bottom: 25px;
+		font-family: 'Proxima Nova Alt';
+		font-size: 27rem;
+
+		&--underline {
+			text-decoration: underline;
+			text-transform: uppercase;
+		}
+	}
+
+	.highlight {
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			z-index: -1;
+		}
+
+		&--yellow::after {
+    	top: -3px;
+			left: 10px;
+			width: 110px;
+			height: 28px;
+			background: var(--yellow);
+		}
+
+		&--pink::after {
+			top: 7px;
+    	left: -5px;
+			width: 90px;
+			height: 25px;
+			background: var(--pink-light);
+		}
+
+		&--green::after {
+    	top: -2px;
+			left: 6px;
+			width: 78px;
+			height: 20px;
+			background: var(--green);
+		}
+	}
+
+
+	&__subtitle {
+		font-size: 25rem;
+	}
+}
+
+.main {
+	&__subtitle {
+		margin-top: 60px;
+		margin-bottom: 80px;
+		font-size: 40rem;
+		font-style: italic;
+		text-transform: lowercase;
+		text-align: center;
+	}
+}
+
+.project {
+	padding: 80px 0 65px;
+
+	&__container {
+		display: flex;
+	}
+
+	&__screenshotContainer {
+		flex: 2;
+    margin-right: 20px;
+		margin-left: -220px;
+	}
+
+	.screenshotContainer__screenshot {
+		position: relative;
+		width: 100%;
+		height: auto;
+		z-index: 1;
+	}
+
+	&__details {
+		padding-top: 60px;
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		position: relative;
+		font-family: 'Adventures Unlimited';
+		font-size: 128rem;
+		line-height: 0.6;
+		left: -47px;
+		transform: rotate(-5deg);
+	}
+
+	&__description {
+    padding-right: 150px;
+		font-size: 24rem;
+		line-height: 1.3;
+	}
+
+	&__tags {
+		max-width: 240px;
+		margin-top: 30px;
+		margin-left: -10px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		line-height: 1.7;
+	}
+
+	&__tag {
+		margin: 0 10px;
+		font-size: 19rem;
+		font-weight: lighter;
+		font-style: italic;
+		text-transform: lowercase;
+	}
+
+	/* Light sections */
+	&:nth-of-type(even) {
+		padding-left: 90px;
+		background: var(--white);
+		color: var(--black);
+
+		.project__screenshotContainer {
+			order: 1;
+			margin-left: 20px;
+			margin-right: -150px;
+		}
+
+		.project__description {
+			padding-right: 0;
+			padding-left: 140px;
+			order: 0;
+		}
+
+		.project__title {
+			order: 1;
+			color: var(--pink);
+			text-shadow: 0 0 6px color-mod(var(--pink) alpha(50%));
+
+			&--eraldo {
+				left: 65px;
+				font-size: 210rem;
+			}
+		}
+
+		.project__tags {
+			order: 2;
+			padding-left: 150px;
+		}
+	}
+
+	/* Dark sections */
+	&:nth-of-type(odd) {
+		background: var(--black);
+		padding-right: 90px;
+		color: var(--white);
+
+		.project__title {
+			text-shadow: 0 0 8px color-mod(var(--white) alpha(70%));
+			margin-bottom: 10px;
+		}
+	}
+}

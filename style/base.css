@@ -1,0 +1,46 @@
+html {
+  font-size: 6.25%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Proxima Nova Alt';
+  font-size: 16px;
+}
+
+figure {
+  margin: 0;
+}
+
+mark {
+  background: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.main {
+  /* max-width: 1300px;
+  margin: 25px auto 0; */
+  font-size: 21rem;
+}
+
+.bold {
+  font-weight: bold;
+}

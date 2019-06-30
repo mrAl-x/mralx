@@ -1,9 +1,11 @@
 :root {
   /* ------ Colors ------ */
   --black: #161011;
+  --gray: #f8f8f8;
   --green: #d4ffc1;
   --pink-light: #f89ac1;
   --pink: #e6117a;
   --white: #ffffff;
-  --yellow: #fff8a6;
+  --yellow-light: #fff8a6;
+  --yellow: #fff283;
 }

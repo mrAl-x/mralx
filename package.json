@@ -4,6 +4,7 @@
 	"description": "Personal Portfolio",
 	"main": "index.js",
 	"scripts": {
+		"build": "parcel build js/index.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
@@ -20,7 +21,7 @@
 			"postcss-import": {},
 			"postcss-color-mod-function": {},
 			"autoprefixer": {
-				"browsers": [
+				"overrideBrowserslist.": [
 					">1%",
 					"last 4 versions",
 					"Firefox ESR",

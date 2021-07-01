@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -144,12 +144,12 @@ function getBundleURL() {
 }
 
 function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)?\/[^/]+(?:\?.*)?$/, '$1') + '/';
 }
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -184,27 +184,27 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"style/variables.css":[function(require,module,exports) {
+},{"./bundle-url":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"style/variables.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"style/base.css":[function(require,module,exports) {
+},{"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"style/base.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./variables":"style/variables.css","_css_loader":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"style/fonts.css":[function(require,module,exports) {
+},{"./variables":"style/variables.css","_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"style/fonts.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../assets/fonts/proxima_nova_alt_regular-webfont.woff2":[["proxima_nova_alt_regular-webfont.ac473918.woff2","assets/fonts/proxima_nova_alt_regular-webfont.woff2"],"assets/fonts/proxima_nova_alt_regular-webfont.woff2"],"./../assets/fonts/proxima_nova_alt_regular-webfont.woff":[["proxima_nova_alt_regular-webfont.0de57e5d.woff","assets/fonts/proxima_nova_alt_regular-webfont.woff"],"assets/fonts/proxima_nova_alt_regular-webfont.woff"],"./../assets/fonts/proxima_nova_alt_bold-webfont.woff2":[["proxima_nova_alt_bold-webfont.4de393db.woff2","assets/fonts/proxima_nova_alt_bold-webfont.woff2"],"assets/fonts/proxima_nova_alt_bold-webfont.woff2"],"./../assets/fonts/proxima_nova_alt_bold-webfont.woff":[["proxima_nova_alt_bold-webfont.8a7b2c88.woff","assets/fonts/proxima_nova_alt_bold-webfont.woff"],"assets/fonts/proxima_nova_alt_bold-webfont.woff"],"./../assets/fonts/proxima_nova_alt_regular_italic-webfont.woff2":[["proxima_nova_alt_regular_italic-webfont.1d4f0a67.woff2","assets/fonts/proxima_nova_alt_regular_italic-webfont.woff2"],"assets/fonts/proxima_nova_alt_regular_italic-webfont.woff2"],"./../assets/fonts/proxima_nova_alt_regular_italic-webfont.woff":[["proxima_nova_alt_regular_italic-webfont.022bff90.woff","assets/fonts/proxima_nova_alt_regular_italic-webfont.woff"],"assets/fonts/proxima_nova_alt_regular_italic-webfont.woff"],"./../assets/fonts/proxima_nova_alt_light_italic-webfont.woff2":[["proxima_nova_alt_light_italic-webfont.9898026c.woff2","assets/fonts/proxima_nova_alt_light_italic-webfont.woff2"],"assets/fonts/proxima_nova_alt_light_italic-webfont.woff2"],"./../assets/fonts/proxima_nova_alt_light_italic-webfont.woff":[["proxima_nova_alt_light_italic-webfont.88f65c82.woff","assets/fonts/proxima_nova_alt_light_italic-webfont.woff"],"assets/fonts/proxima_nova_alt_light_italic-webfont.woff"],"./../assets/fonts/adventures_unlimited_script_regular-webfont.woff2":[["adventures_unlimited_script_regular-webfont.3e195b65.woff2","assets/fonts/adventures_unlimited_script_regular-webfont.woff2"],"assets/fonts/adventures_unlimited_script_regular-webfont.woff2"],"./../assets/fonts/adventures_unlimited_script_regular-webfont.woff":[["adventures_unlimited_script_regular-webfont.05f896b2.woff","assets/fonts/adventures_unlimited_script_regular-webfont.woff"],"assets/fonts/adventures_unlimited_script_regular-webfont.woff"],"_css_loader":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"style/index.css":[function(require,module,exports) {
+},{"./../assets/fonts/proxima_nova_alt_regular-webfont.woff2":[["proxima_nova_alt_regular-webfont.ac473918.woff2","assets/fonts/proxima_nova_alt_regular-webfont.woff2"],"assets/fonts/proxima_nova_alt_regular-webfont.woff2"],"./../assets/fonts/proxima_nova_alt_regular-webfont.woff":[["proxima_nova_alt_regular-webfont.0de57e5d.woff","assets/fonts/proxima_nova_alt_regular-webfont.woff"],"assets/fonts/proxima_nova_alt_regular-webfont.woff"],"./../assets/fonts/proxima_nova_alt_bold-webfont.woff2":[["proxima_nova_alt_bold-webfont.4de393db.woff2","assets/fonts/proxima_nova_alt_bold-webfont.woff2"],"assets/fonts/proxima_nova_alt_bold-webfont.woff2"],"./../assets/fonts/proxima_nova_alt_bold-webfont.woff":[["proxima_nova_alt_bold-webfont.8a7b2c88.woff","assets/fonts/proxima_nova_alt_bold-webfont.woff"],"assets/fonts/proxima_nova_alt_bold-webfont.woff"],"./../assets/fonts/proxima_nova_alt_regular_italic-webfont.woff2":[["proxima_nova_alt_regular_italic-webfont.1d4f0a67.woff2","assets/fonts/proxima_nova_alt_regular_italic-webfont.woff2"],"assets/fonts/proxima_nova_alt_regular_italic-webfont.woff2"],"./../assets/fonts/proxima_nova_alt_regular_italic-webfont.woff":[["proxima_nova_alt_regular_italic-webfont.022bff90.woff","assets/fonts/proxima_nova_alt_regular_italic-webfont.woff"],"assets/fonts/proxima_nova_alt_regular_italic-webfont.woff"],"./../assets/fonts/proxima_nova_alt_light_italic-webfont.woff2":[["proxima_nova_alt_light_italic-webfont.9898026c.woff2","assets/fonts/proxima_nova_alt_light_italic-webfont.woff2"],"assets/fonts/proxima_nova_alt_light_italic-webfont.woff2"],"./../assets/fonts/proxima_nova_alt_light_italic-webfont.woff":[["proxima_nova_alt_light_italic-webfont.88f65c82.woff","assets/fonts/proxima_nova_alt_light_italic-webfont.woff"],"assets/fonts/proxima_nova_alt_light_italic-webfont.woff"],"./../assets/fonts/adventures_unlimited_script_regular-webfont.woff2":[["adventures_unlimited_script_regular-webfont.3e195b65.woff2","assets/fonts/adventures_unlimited_script_regular-webfont.woff2"],"assets/fonts/adventures_unlimited_script_regular-webfont.woff2"],"./../assets/fonts/adventures_unlimited_script_regular-webfont.woff":[["adventures_unlimited_script_regular-webfont.05f896b2.woff","assets/fonts/adventures_unlimited_script_regular-webfont.woff"],"assets/fonts/adventures_unlimited_script_regular-webfont.woff"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"style/index.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./base":"style/base.css","./variables":"style/variables.css","./fonts":"style/fonts.css","_css_loader":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/index.js":[function(require,module,exports) {
+},{"./base":"style/base.css","./variables":"style/variables.css","./fonts":"style/fonts.css","_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -221,7 +221,7 @@ var _default = function _default() {
 };
 
 exports.default = _default;
-},{"../style/index.css":"style/index.css"}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../style/index.css":"style/index.css"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -249,7 +249,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64894" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63974" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -280,8 +280,9 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
         assetsToAccept.forEach(function (v) {
           hmrAcceptRun(v[0], v[1]);
         });
-      } else {
-        window.location.reload();
+      } else if (location.reload) {
+        // `location` global exists in a web worker context but lacks `.reload()` function.
+        location.reload();
       }
     }
 
@@ -424,5 +425,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/index.js"], null)
+},{}]},{},["../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/index.js"], null)
 //# sourceMappingURL=/js.00a46daa.js.map

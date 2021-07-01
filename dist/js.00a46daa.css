@@ -245,8 +245,7 @@ a {
 		font-size: 128rem;
 		line-height: 0.6;
 		left: -47px;
-		-webkit-transform: rotate(-5deg);
-		        transform: rotate(-5deg);
+		transform: rotate(-5deg);
 	}
 
 .project__description {

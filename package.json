@@ -1,36 +1,38 @@
 {
-	"name": "personal_portfolio",
-	"version": "1.0.0",
-	"description": "Personal Portfolio",
-	"main": "index.js",
-	"scripts": {
-		"build": "parcel build js/index.js",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"postcss": {
-		"modules": false,
-		"plugins": {
-			"postcss-nested": {},
-			"postcss-import": {},
-			"postcss-color-mod-function": {},
-			"autoprefixer": {
-				"overrideBrowserslist.": [
-					">1%",
-					"last 4 versions",
-					"Firefox ESR",
-					"not ie < 9"
-				],
-				"flexbox": "no-2009"
-			}
-		}
-	},
-	"devDependencies": {
-		"autoprefixer": "^9.8.8",
-		"postcss-color-mod-function": "^3.0.3",
-		"postcss-import": "^12.0.1",
-		"postcss-nested": "^4.2.3"
-	}
+  "name": "personal_portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel js/index.js",
+    "build": "parcel build js/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "postcss": {
+    "modules": false,
+    "plugins": {
+      "postcss-nested": {},
+      "postcss-import": {},
+      "postcss-color-mod-function": {},
+      "autoprefixer": {
+        "overrideBrowserslist.": [
+          ">1%",
+          "last 4 versions",
+          "Firefox ESR",
+          "not ie < 9"
+        ],
+        "flexbox": "no-2009"
+      }
+    }
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.8",
+    "parcel-bundler": "^1.12.5",
+    "postcss-color-mod-function": "^3.0.3",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.2.3"
+  }
 }
